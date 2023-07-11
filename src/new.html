@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>NewProject</title>
+  </head>
+  <body>
+    <!-- 1- kesham habuu lagal flex 2- kesham habuu lagal responsive krdn -->
+
+    <nav
+      class="fixed w-full flex bg-slate-100 font-display px-8 py-4 lg:px-[10vw] justify-between"
+    >
+      <h1
+        class="text-blue-700 font-bold transition-all ease-in-out duration-300 hover:tracking-wider cursor-pointer text-xl lg:text-2xl"
+      >
+        Muhammed .
+      </h1>
+      <div>
+        <ul class="gap-5 hidden lg:flex text-lg">
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">About</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Skills</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Education</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Work</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Experince</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-bold">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <box-icon class="lg:hidden" name="menu-alt-right"></box-icon>
+    </nav>
+
+    <main
+      class="flex flex-col lg:flex-row justify-center lg:gap-72 gap-14 p-4 items-center min-h-screen bg-slate-200"
+    >
+      <!-- section one  -->
+      <section class="flex flex-col gap-16">
+        <div>
+          <h1 class="font-display text-3xl lg:text-4xl">
+            Hi there,<br />
+            I'm <span class="text-blue-700 font-bold">Muhammed Yassin</span>
+          </h1>
+          <p class="text-xl">Iam Front-end developer</p>
+          <br />
+          <button
+            type="button"
+            class="flex items-center bg-blue-700 font-medium text-white text-2xl rounded-full px-4 py-2 ease-in-out delay-150 transition-all hover:tracking-wider duration-300"
+          >
+            About me
+            <box-icon
+              name="down-arrow-alt"
+              class="animate-bounce"
+              size="md"
+              color="white"
+            ></box-icon>
+          </button>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/muhammed-yassin-mala-51277a269"
+            ><i class="bx bxs-like bx-tada-hover"></i
+            ><box-icon
+              animation="tada-hover"
+              color="blue"
+              size="lg"
+              type="logo"
+              name="linkedin-square"
+            ></box-icon
+          ></a>
+          <a href="https://github.com/muhamedyasin"
+            ><box-icon
+              color="blue"
+              size="lg"
+              type="logo"
+              name="github"
+            ></box-icon
+          ></a>
+          <a
+            href="https://www.facebook.com/Mohammed.Yasin.Badli?mibextid=ZbWKwL"
+            ><box-icon color="blue" size="lg" name="meta" type="logo"></box-icon
+          ></a>
+          <a href="https://t.me/Muhammed_Yassen"
+            ><box-icon
+              color="blue"
+              size="lg"
+              type="logo"
+              name="telegram"
+            ></box-icon
+          ></a>
+          <a href="https://www.instagram.com/mhamad_yasin_mala?r=nametag"
+            ><box-icon
+              color="blue"
+              size="lg"
+              type="logo"
+              name="instagram-alt"
+            ></box-icon
+          ></a>
+        </div>
+      </section>
+      <!-- section two -->
+      <section class="w-64 h-64 lg:w-96 lg:h-96 overflow-clip object-cover">
+        <img
+          src="/images/program.jpg"
+          alt="img"
+          class="rounded-full w-full h-full"
+        />
+      </section>
+    </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
